@@ -1,9 +1,9 @@
 const ErrorResponse = require("../utils/errorResponse");
 module.exports = (err, req, res, next) => {
-  console.log(
-    err,
-    err.name.yellow
-  );
+//   console.log(
+//     err,
+//     err.name.yellow
+//   );
 
   if (err.name === "CastError") {
     err = new ErrorResponse(`Resource not found with of ID ${err.value}`, 404);
