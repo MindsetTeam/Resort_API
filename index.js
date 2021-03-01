@@ -13,7 +13,7 @@ const auth = require("./routes/auth");
 // const users = require("./routes/users");
 // const branches = require("./routes/branches");
 // const reservations = require("./routes/reservations");
-const rooms = require("./routes/rooms");
+// const rooms = require("./routes/rooms");
 // const customers = require("./routes/customers");
 
 const app = express();
@@ -30,7 +30,7 @@ app.use("/api/v1/auth", auth);
 // app.use("/api/v1/rooms", rooms);
 // app.use("/api/v1/branches", branches);
 // app.use("/api/v1/reservations", reservations);
-// app.use("/api/v1/customers", customers);
+app.use("/api/v1/customers", customers);
 
 app.use("*", (req, res) => {
   res.status(404).json({
