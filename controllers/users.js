@@ -68,8 +68,8 @@ module.exports = {
       },
     });
   }),
-  // createAdmin: asyncHandler(async (req,res)=>{
-  //   req.body.role = "admin";
-  //   await User.create(req.body);
-  // })
+  createAdmin: asyncHandler(async (req,res)=>{
+    req.body.role = "admin";
+    await User.create(req.body);
+  })
 };
