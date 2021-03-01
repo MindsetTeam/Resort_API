@@ -10,11 +10,11 @@ dotenv.config({ path: "./config/config.env" });
 connectDB();
 
 const auth = require("./routes/auth");
-const users = require("./routes/users");
+// const users = require("./routes/users");
 const branches = require("./routes/branches");
-// const reservations = require("./routes/reservations");
-// const rooms = require("./routes/rooms");
-// const customers = require("./routes/customers");
+const reservations = require("./routes/reservations");
+const rooms = require("./routes/rooms");
+const customers = require("./routes/customers");
 
 const app = express();
 
