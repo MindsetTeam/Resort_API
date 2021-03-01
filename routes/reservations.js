@@ -7,7 +7,7 @@ const {
   updateReservation,
   checkIn,
   checkOut,
-} = require("../controllers/Reservations");
+} = require("../controllers/reservations");
 const Reservation = require("../models/Reservation");
 
 const router = express.Router();
