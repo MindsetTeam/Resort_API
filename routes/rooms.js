@@ -6,7 +6,7 @@ const {
   removeRoom,
   updateRoom,
   getRoomsBelong
-} = require("../controllers/Rooms");
+} = require("../controllers/rooms");
 const Room = require("../models/Room");
 
 const router = express.Router({ mergeParams: true });
