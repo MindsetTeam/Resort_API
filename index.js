@@ -25,12 +25,12 @@ if (process.env.NODE_ENV === "development") {
 }
 
 // Router
-app.use("/api/v1/auth", auth);
-app.use("/api/v1/users", users);
-app.use("/api/v1/rooms", rooms);
-app.use("/api/v1/branches", branches);
-app.use("/api/v1/reservations", reservations);
-app.use("/api/v1/customers", customers);
+// app.use("/api/v1/auth", auth);
+// app.use("/api/v1/users", users);
+// app.use("/api/v1/rooms", rooms);
+// app.use("/api/v1/branches", branches);
+// app.use("/api/v1/reservations", reservations);
+// app.use("/api/v1/customers", customers);
 
 app.use("*", (req, res) => {
   res.status(404).json({
