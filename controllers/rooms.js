@@ -56,6 +56,7 @@ module.exports = {
           limit: 1,
           sort: { createdAt: -1 },
         },
+        populate: "customer"
       });
     res.status(200).json(result);
   }),
